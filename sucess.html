@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLUSHO - Order Successful</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f9;
+        }
+
+
+        .nav {
+            height: 60px;
+            width: 100%;
+            background-color: pink;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav h1 {
+            margin: 0;
+            padding-left: 50px;
+
+            font-family: Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .home-link {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        .home-link a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .home-link a:hover {
+            color: #e80071;
+        }
+
+
+
+        .success-container {
+            min-height: calc(100vh - 60px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px 20px;
+        }
+
+        .success-box {
+            width: 500px;
+
+            background: white;
+
+            padding: 50px 40px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .success-icon {
+            width: 85px;
+            height: 85px;
+
+            margin: auto;
+
+            border-radius: 50%;
+
+            background: #e80071;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .success-icon i {
+            font-size: 50px;
+        }
+
+        .success-box h2 {
+            margin: 25px 0 10px;
+
+            font-family: Georgia, serif;
+            font-size: 32px;
+        }
+
+        .success-box p {
+            color: #666;
+            line-height: 24px;
+        }
+
+
+
+        .order-message {
+            margin: 25px 0;
+
+            padding: 15px;
+
+            background: #fff0f6;
+
+            border-radius: 8px;
+
+            color: #444;
+        }
+
+        .order-message strong {
+            color: #e80071;
+        }
+
+
+      
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+
+            padding: 12px 22px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+        }
+
+        .home-btn {
+            background: #e80071;
+            color: white;
+        }
+
+        .home-btn:hover {
+            background: #c90061;
+        }
+
+        .shop-btn {
+            border: 1px solid #e80071;
+            color: #e80071;
+            background: white;
+        }
+
+        .shop-btn:hover {
+            background: #fff0f6;
+        }
+
+
+        @media(max-width:500px) {
+
+            .nav h1 {
+                padding-left: 20px;
+            }
+
+            .home-link {
+                margin-right: 20px;
+            }
+
+            .success-box {
+                width: 100%;
+                padding: 40px 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .buttons a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="nav">
+
+        <h1>BLUSHO</h1>
+
+        <div class="home-link">
+
+            <a href="index.html">
+                <i class="ri-home-line"></i>
+                Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="success-container">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+
+                <i class="ri-check-line"></i>
+
+            </div>
+
+
+            <h2>Order Successful!</h2>
+
+            <p>
+                Thank you for shopping with BLUSHO.
+                Your order has been placed successfully.
+            </p>
+
+
+            <div class="order-message">
+
+                <strong>Order Confirmed ✓</strong>
+
+                <br>
+
+                Your beauty products are on their way!
+
+            </div>
+
+
+            <div class="buttons">
+
+                <a href="index.html" class="home-btn">
+                    <i class="ri-home-line"></i>
+                    Back to Home
+                </a>
+
+                <a href="cart.html" class="shop-btn">
+                    <i class="ri-shopping-bag-line"></i>
+                    View Cart
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

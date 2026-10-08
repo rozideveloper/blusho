@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLUSHO - Sign In</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f9;
+        }
+
+      
+
+        .nav {
+            height: 60px;
+            width: 100%;
+            background-color: pink;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav h1 {
+            margin: 0;
+            padding-left: 50px;
+
+            font-family: Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .back-home {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .back-home a:hover {
+            color: #e80071;
+        }
+
+
+       
+
+        .signin-container {
+            min-height: calc(100vh - 60px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px 20px;
+        }
+
+        .signin-box {
+            width: 400px;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+            text-align: center;
+        }
+
+        .signin-box i.main-icon {
+            font-size: 55px;
+            color: #e80071;
+        }
+
+        .signin-box h2 {
+            margin: 15px 0 8px;
+
+            font-family: Georgia, serif;
+            font-size: 30px;
+        }
+
+        .signin-box p {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+      
+
+        .input-box {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .input-box label {
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .input-box input {
+            width: 100%;
+
+            padding: 13px 15px;
+
+            border: 1px solid #ddd;
+            border-radius: 7px;
+
+            outline: none;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+        .input-box input:focus {
+            border-color: #e80071;
+
+            box-shadow: 0 0 5px rgba(232, 0, 113, 0.2);
+        }
+
+
+      
+
+        .signin-btn {
+            width: 100%;
+
+            padding: 13px;
+
+            border: none;
+            border-radius: 7px;
+
+            background: #e80071;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .signin-btn:hover {
+            background: #c90061;
+        }
+
+
+      
+
+        .signup-text {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        .signup-text a {
+            color: #e80071;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        @media(max-width:500px) {
+
+            .nav h1 {
+                padding-left: 20px;
+            }
+
+            .back-home {
+                margin-right: 20px;
+            }
+
+            .signin-box {
+                width: 100%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  
+
+    <div class="nav">
+
+        <h1>BLUSHO</h1>
+
+        <div class="back-home">
+            <a href="index.html">
+                <i class="ri-arrow-left-line"></i>
+                Home
+            </a>
+        </div>
+
+    </div>
+
+
+   
+
+    <div class="signin-container">
+
+        <div class="signin-box">
+
+            <i class="ri-user-3-line main-icon"></i>
+
+            <h2>Welcome to BLUSHO</h2>
+
+            <p>Sign in to continue your shopping</p>
+
+
+            <form id="signinForm">
+
+                <div class="input-box">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="signin-btn">
+
+                    Sign In
+
+                </button>
+
+            </form>
+
+
+            <div class="signup-text">
+
+                Don't have an account?
+                <a href="#">Create Account</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const signinForm = document.querySelector("#signinForm");
+
+        signinForm.addEventListener("submit", function(e) {
+
+            e.preventDefault();
+
+            const email = document.querySelector("#email").value;
+            const password = document.querySelector("#password").value;
+
+            if (email === "" || password === "") {
+
+                alert("Please fill all details");
+
+                return;
+            }
+
+          
+            window.location.href = "sucess.html";
+
+        });
+
+    </script>
+
+</body>
+</html>
